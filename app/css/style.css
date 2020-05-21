@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+
+html, body {
+    font-family: "Rajdhani", sans-serif !important;
+}
+
+#container {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#container>nav {
+    display: block;
+    width: 100vw;
+    height: 24px;
+    background-color: green;
+}
+
+#container>nav>#titleShown {
+    height: 100%;
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+    float: left;
+    padding-left: 0.5em;
+    -webkit-app-region: drag;
+}
+
+#container>nav>#buttons{
+    float: right;
+    font-size: 0.8rem;
+    width: 150px;
+    height: 100%;
+    background-color: purple;
+    transition: all ease-in-out .2s;
+}
+
+#buttons>#minimise>span {
+    padding-top: 5px;
+}
+
+#buttons>#minimise, #buttons>#maximise, #buttons>#close {
+    float: left;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    color: blue;
+}
+
+#buttons>#minimise:hover {
+    background-color: lightgray;
+}
+#buttons>#maximise:hover {
+    background-color: lightgray;
+}
+#buttons>#close:hover {
+    background-color: red;
+    color: white;
+} 

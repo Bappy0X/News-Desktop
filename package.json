@@ -1,0 +1,24 @@
+{
+  "name": "news-desktop",
+  "version": "1.0.0",
+  "description": "The Desktop App for News-Notifier.",
+  "main": "app.js",
+  "dependencies": {
+    "electron": "^9.0.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bappy0X/News-Desktop.git"
+  },
+  "author": "@Bappy0X",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Bappy0X/News-Desktop/issues"
+  },
+  "homepage": "https://github.com/Bappy0X/News-Desktop#readme"
+}
