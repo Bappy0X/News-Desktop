@@ -4,18 +4,15 @@ html, body {
     font-family: "Rajdhani", sans-serif !important;
 }
 
-#container {
+
+#container>nav {
     width: 100vw;
     position: absolute;
     top: 0;
-    right: 0;
-}
-
-#container>nav {
-    display: block;
-    width: 100vw;
+    left: 0;
     height: 24px;
     background-color: green;
+    -webkit-app-region: drag;
 }
 
 #container>nav>#titleShown {
@@ -25,7 +22,6 @@ html, body {
     font-weight: bold;
     float: left;
     padding-left: 0.5em;
-    -webkit-app-region: drag;
 }
 
 #container>nav>#buttons{
@@ -35,10 +31,11 @@ html, body {
     height: 100%;
     background-color: purple;
     transition: all ease-in-out .2s;
+    -webkit-app-region: no-drag;
 }
 
 #buttons>#minimise>span {
-    padding-top: 5px;
+    height: 100%;
 }
 
 #buttons>#minimise, #buttons>#maximise, #buttons>#close {
@@ -49,10 +46,7 @@ html, body {
     color: blue;
 }
 
-#buttons>#minimise:hover {
-    background-color: lightgray;
-}
-#buttons>#maximise:hover {
+#buttons>#minimise:hover, #buttons>#maximise:hover {
     background-color: lightgray;
 }
 #buttons>#close:hover {

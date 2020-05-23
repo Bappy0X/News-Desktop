@@ -9,7 +9,8 @@ function createWindow () {
     icon: path.join(__dirname, "/img/icon_placeholder.jpg"),
     webPreferences: {
       //preload: path.join(__dirname, "js/init.js"),
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     },
     frame: false
   })
