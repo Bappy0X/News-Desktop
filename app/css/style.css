@@ -5,7 +5,7 @@ html, body {
 }
 
 
-#container>nav {
+nav {
     width: 100vw;
     position: absolute;
     top: 0;
@@ -15,7 +15,7 @@ html, body {
     -webkit-app-region: drag;
 }
 
-#container>nav>#titleShown {
+nav>#nav-title {
     height: 100%;
     font-size: 1.2rem;
     color: red;
@@ -24,7 +24,7 @@ html, body {
     padding-left: 0.5em;
 }
 
-#container>nav>#buttons{
+nav>#buttons{
     float: right;
     font-size: 0.8rem;
     width: 150px;

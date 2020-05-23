@@ -1,20 +1,21 @@
-const $ = require("jquery");
 const { remote } = require("electron");
-var win = remote.getCurrentWindow();
+var win = remote.BrowserWindow.getFocusedWindow();
 
-$("#minimise").click(function() {
+$("#minimise").click(function(){
     win.minimize();
 });
 
-$("#maximise").click(function() {
-    if(win.isMaximized()){
-        win.unmaximize();
-    }
-    else{
-        win.maximize();
-    }
+function updateMaxButton(){
+    win.isMaximized() ? $("#maximise span").attr("class", "far fa-window-restore") : $("#maximise span").attr("class", "far fa-window-maximize");
+};
+
+$("#maximise").click(function(){
+    win.isMaximized() ? win.unmaximize() : win.maximize()
 });
 
-$("#close").click(function() {
+win.on("maximize", updateMaxButton).on("unmaximize", updateMaxButton);
+$(document).ready(updateMaxButton);
+
+$("#close").click(function(){
     win.close();
 });

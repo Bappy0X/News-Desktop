@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require("electron")
 const path = require("path")
 const url = require("url")
 
-function createWindow () {
+function createWindow(){
   const window = new BrowserWindow({
     width: 1280,
     height: 720,
@@ -31,7 +31,7 @@ app.whenReady().then(() => {
   })
 })
 
-app.on("window-all-closed", function () {
+app.on("window-all-closed", function(){
   // macOS menu functionality
   if (process.platform !== "darwin") app.quit()
 })
