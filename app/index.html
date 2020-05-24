@@ -53,6 +53,19 @@
   <h1>This is the content</h1>
   <p>Test</p>
 
+  <script>
+    function buttonclicked() {
+      let myNotification = new Notification("testing", {
+        title: "test",
+        body: 'Lorem Ipsum Dolor Sit Amet',
+        icon: "../img/icon_placeholder.jpg",
+        subtitle: "testtt",
+        silent: true
+      });
+    };
+  </script>
+  <button onclick="buttonclicked()">Click to create notification</button>
+
   <textarea id="input"></textarea>
   <div id="output"></div>
   <script>
